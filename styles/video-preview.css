@@ -1,0 +1,91 @@
+/* Thumbnail styles */
+
+
+.thumbnail{
+    width: 100%;
+    }
+
+.video-grid{
+    display: grid;
+    column-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 40px;
+    }
+
+
+/*responsive degin using media query strats here*/
+@media (max-width: 750px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px){
+
+}
+
+@media (min-width: 1000px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+/*responsive degin using media query ends here*/
+
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    }
+
+.thumbnail-row{
+    margin-bottom: 8px;
+    position: relative;
+    }
+
+.profile-picture{
+    width: 36px;
+    border-radius: 50px;
+    }
+
+.video-title{
+    font-size: 14px;
+    margin-top: 0;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;   
+    }
+
+.video-author,
+.video-stats{
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+    }
+
+.video-author{
+    margin-bottom: 5px;
+    }
+
+.video-duration{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    font-size: 12px;
+    padding: 4px;
+    font-weight: 500;
+    border-radius: 2px;
+    right: 5px;
+}
+
+.video-title-link, 
+.channel-link{
+    text-decoration: none;
+    color: inherit;
+}
+/*general knowledge applied at the header;
+we use a property of "justify-content: space-between;" in a flex box 
+to make sure elements in a particular flex are space evenly whn changing the screen
+
+we will also use the property "align items: center;" to make our icons/elements in
+the header to be horizontally or vertically aligned
+
+*/
